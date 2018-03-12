@@ -5,11 +5,13 @@
     <body>
       <div>
         <h1><a href="/">Marbar's BLOG</a></h1>
+        <hr></hr>
       </div>
+
 {% for post in posts %}
       <div>
-        <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
+        <p>published: {{ post.published_date }}</p>
         <p>{{ post.text|linebreaksbr }}</p>
       </div>
 {% endfor %}
